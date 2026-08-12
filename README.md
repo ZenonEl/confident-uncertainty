@@ -151,9 +151,9 @@ A  "Current checks show normal operation. I have not load-tested it, so peak
 The pattern is *present-tense status → the condition that would break it*. It
 answers the question without promising the future.
 
-Haven't looked at the dashboard? Then the answer is `"I have not checked today —
-give me ten minutes and I will tell you."` Still decision-ready: it gives the
-asker a time instead of a guess dressed as a status.
+Haven't looked at the dashboard? Then the answer is `"I have not checked today.
+I can look now and tell you."` Still decision-ready: it names the gap and offers
+the next step instead of a guess dressed as a status.
 
 **An estimate**
 

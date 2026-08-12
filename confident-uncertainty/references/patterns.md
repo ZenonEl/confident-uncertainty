@@ -22,6 +22,7 @@ the failure this skill exists to prevent.
 ## Contents
 
 - [Status question under pressure](#status-question-under-pressure)
+- [The calibrated-status pattern](#the-calibrated-status-pattern)
 - [Standup and progress updates](#standup-and-progress-updates)
 - [Incident and outage updates](#incident-and-outage-updates)
 - [Estimates and deadlines](#estimates-and-deadlines)
@@ -86,10 +87,12 @@ it sounds like evidence and is not. Then the honest forms are:
 
 - "It worked when I last used it. Nothing is monitoring it, so I cannot say what
   it is doing now."
-- "Not verified. Give me ten minutes and I will check."
+- "Not verified. I can check now."
 
 The second is usually the best answer to a status question you cannot answer: it
-converts an unknown into a time.
+converts an unknown into a next step. Offer a duration only if you actually know
+how long the check takes — an invented interval is a commitment the speaker
+never made.
 
 ## Standup and progress updates
 
@@ -235,15 +238,16 @@ The rewrite still works; it just states less.
 
 | Situation | Wrong (invented) | Right |
 |---|---|---|
-| Asked for status, has not looked | "Everything looks healthy." | "I have not checked today. Ten minutes and I will tell you." |
+| Asked for status, has not looked | "Everything looks healthy." | "I have not checked today. I can look now and tell you." |
 | Asked for a cause, has a hunch only | "It's the connection pool." | "Untriaged. The connection pool is where I would look first." |
 | Asked for impact, has not measured | "Only a few users." | "Impact not yet quantified." |
 | Asked for a date, has no plan | "End of the week." | "No date yet — I have not scoped it. I will have one once I do." |
 | Asked whether a fix worked, ran nothing | "Should be fine now." | "Not verified — I have not run it since the change." |
 
-Every "right" column entry is shorter than the hedged sentence it replaces, and
-every one is defensible. Calibration and brevity pull in the same direction; it
-is only invention that needs the extra words.
+Every "right" entry is defensible with nothing but what the speaker actually
+has, and none of them claims knowledge the situation column rules out. Where
+honesty costs a few extra words over the invented answer, those are the words
+that keep it true.
 
 ## Auditing a rewrite
 

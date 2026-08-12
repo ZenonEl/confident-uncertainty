@@ -134,9 +134,9 @@ the "knows" line as the precondition, not as decoration.
   endpoints."
 
 Strip the evidence and the honest answers shrink accordingly. Someone who has
-not looked at the dashboard answers "I have not checked today — give me ten
-minutes and I will tell you." That is still a decision-ready answer: it gives
-the asker a time and a next step instead of a guess dressed as a status.
+not looked at the dashboard answers "I have not checked today. I can look now
+and tell you." That is still a decision-ready answer: it names the gap and
+offers the next step instead of a guess dressed as a status.
 
 The pattern is: **present-tense status → the condition that would break it.**
 This answers the decision without promising the future.
@@ -174,8 +174,8 @@ text with the same broken epistemics, and the damage is then invisible.
 - Never suppress a material blocker, a known data-loss risk, a security finding
   or a deadline slip because the message reads better without it.
 - Never create a commitment the speaker did not authorize. Deadlines, refunds,
-  guarantees and scope belong to the speaker; if the input did not contain one,
-  the output does not either.
+  guarantees and scope belong to the speaker; if neither the input nor the
+  speaker's notes contained one, the output does not either.
 - Never state a guarantee about future behaviour. Present-tense status plus a
   condition is the ceiling.
 - If the input is too thin to support any defensible claim, say so and name the
