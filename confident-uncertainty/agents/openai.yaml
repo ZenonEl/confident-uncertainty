@@ -1,0 +1,4 @@
+interface:
+  display_name: "Confident Uncertainty"
+  short_description: "Turn hedged updates into clear status"
+  default_prompt: "Use $confident-uncertainty to rewrite this hedged status update into a concise, decision-ready answer."
