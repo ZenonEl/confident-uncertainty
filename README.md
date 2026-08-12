@@ -10,15 +10,33 @@ claim, and states the limits of the claim explicitly instead of smearing doubt
 across the whole message.
 
 ```text
-before  "I think it should be working now? I tested it a couple of times and
-         didn't see any errors, but I'm not 100% sure it's fully fixed."
+what you have   ran it twice this morning, both clean, nothing in the error
+                log; never reproduced the original trigger; the nightly
+                covers that path tonight
 
-after   "Fixed in the last three runs, no errors. I have not reproduced the
-         original trigger, so I would not call it confirmed until the next
-         nightly."
+before          "I think it should be working now? I tested it a couple of
+                 times and didn't see any errors, but I'm not 100% sure it's
+                 fully fixed."
+
+after           "Two clean runs this morning, no errors. I have not reproduced
+                 the original trigger — tonight's nightly covers that path."
 ```
 
-Same evidence. Nothing invented, nothing hidden, half the words.
+Nothing invented, nothing hidden, half the words. The specifics in the rewrite
+are recovered from what you already knew — a hedged draft usually throws those
+away, and "a couple of times" is two runs whose result you remember perfectly
+well.
+
+If you *don't* have them, the output doesn't get them either:
+
+```text
+after (thin)    "It ran clean the last few times I tried it. I have not
+                 confirmed the original problem is gone."
+```
+
+Vaguer, still shorter than the hedge, and still honest. Naming a gap is a valid
+answer; inventing a number to fill it is the failure this skill exists to
+prevent.
 
 ## What it does
 
@@ -39,6 +57,12 @@ bucketing pass fixes the category, and the rewrite follows from it.
 The skill then answers the actual decision the reader faces, drops explanatory
 water and academic inflation, and surfaces material risk when leaving it out
 would mislead.
+
+One rule holds the rest together: **every specific in the output must trace to
+the input or to notes you actually have.** Before a rewrite ships, each number,
+time, version, cause and date gets pointed at and sourced; anything unsourced
+comes out. The constraint is not "say less" — it is "say only what you can
+source", and where the evidence is rich the output is correspondingly concrete.
 
 ## Install
 
@@ -111,26 +135,39 @@ well.
 
 ## Examples
 
+Every rewrite below is valid *given the stated evidence*. Strip the evidence and
+the honest answer shrinks with it — that is the point, not a limitation.
+
 **Pressure for a yes/no answer**
 
 ```text
+what you have   the dashboard is green; you have not run a load test
+
 Q  "Does it work?"
-A  "Current checks show normal operation. Nothing in the last 24 hours failed.
-    I have not load-tested it, so peak behaviour is unverified."
+A  "Current checks show normal operation. I have not load-tested it, so peak
+    behaviour is unverified."
 ```
 
 The pattern is *present-tense status → the condition that would break it*. It
 answers the question without promising the future.
 
+Haven't looked at the dashboard? Then the answer is `"I have not checked today —
+give me ten minutes and I will tell you."` Still decision-ready: it gives the
+asker a time instead of a guess dressed as a status.
+
 **An estimate**
 
 ```text
+what you have   gut feel of two weeks; the staging migration took three days
+                and behaved; production data volume is unmeasured; measuring
+                it would take about a day
+
 before  "It's hard to say exactly, maybe two weeks? Could be longer if we hit
          problems with the migration, hard to know at this point."
 
-after   "Two weeks if the migration behaves like the staging run. The unknown is
-         production data volume — I can size that in a day and firm up the
-         estimate after."
+after   "Two weeks if production migrates like staging did. The open variable is
+         production data volume, which nobody has measured — I can measure it in
+         about a day and firm the estimate up after."
 ```
 
 The conditional does the work the hedging was attempting, and it hands the
@@ -139,13 +176,20 @@ reader a lever: they can buy certainty by funding the one-day check.
 **Escalation**
 
 ```text
+what you have   the last three export runs were checked; the most recent is
+                missing 412 rows; the first bad run was Tuesday; no cause
+                found; invoicing goes out Friday
+
 before  "Sorry to bother you — I might be wrong but it looks like there could
          maybe be a problem with the billing export?"
 
 after   "The billing export has been dropping rows since Tuesday — 412 missing
-         in the last run. I have not found the cause. This needs a decision
-         today on whether to pause invoicing."
+         in the most recent run. I have not found the cause. Invoicing goes out
+         Friday, so we need a decision before then on whether to pause it."
 ```
+
+The Friday deadline is a fact from your notes, not urgency added for effect.
+Inventing a deadline to force attention is its own kind of fabrication.
 
 ## What it will not do
 
